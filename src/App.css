@@ -7,19 +7,36 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  
-}
-
 .App-header {
   background-color: #FAFF19;
-  min-height: 10vh;
+  min-height: 5vh;
+  max-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #210281;
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header-lower {
+  background-color: #424242;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FAFAFA;
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-FB-Icon {
+  width: 3vh;
+  filter: invert(98%) sepia(100%) saturate(6%) hue-rotate(211deg) brightness(100%) contrast(103%);
 }
 
 .App-link {
@@ -27,26 +44,31 @@
 }
 
 .Header-menu {
-  direction: rtl;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-  .App-logo {
-    width: 50%;
-  }
-}
-
-.Logo-cell {
-  width: 30%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0vh;
 }
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header-menu-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.Header-menu-options > div {
+  text-align: center;
+  margin:3vh;
+}
+
+.Header-menu-options-alt {
+  text-align: left;
+}
+
+
+
+.App-logo-wash {
+  height: 50%;
+  padding-top: 15px;
+  width: 50%;
 }
