@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import enterance_lambo from './components/f9_new.png'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <main>
+    <img src={enterance_lambo} class="Index-image"></img>
+    </main>
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
