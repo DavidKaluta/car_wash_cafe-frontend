@@ -17,7 +17,7 @@ function App() {
             <div>אודות</div>
             <div>מחירון</div>
             <div>איפה אנחנו?</div>
-            <div><a href="https://example.com"><img src={fb} className="App-FB-Icon" alt="Facebook"></img></a></div>
+            <div><a href="https://www.facebook.com/pages/category/Car-Wash/Car-Wash-Cafe-רחיצת-מכוניות-1653280981570680/"><img src={fb} className="App-FB-Icon" alt="Facebook"></img></a></div>
         </div>
       </header>
     </div>

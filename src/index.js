@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import enterance_lambo from './res/images/f9_new.png'
-import free_lunch from './res/images/f17.jpeg'
+import free_lunch from './res/images/f10.jpeg'
 import benz_wash from './res/images/f19.jpeg'
 import acc_store from './res/images/f20.jpeg'
 import App from './App';
