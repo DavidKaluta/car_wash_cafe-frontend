@@ -39,7 +39,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <main>
-      <img src={enterance_lambo} class="Index-image" alt="כניסה" ></img>
+      <img src={enterance_lambo} className="Index-image" alt="כניסה" ></img>
       <div className="Index-Highlights">
           <div><ImageContainer image={benz_wash} text="רחיצה ללא שריטות"></ImageContainer></div>
           <div><ImageContainer image={free_lunch} text="קפיטריה במקום"></ImageContainer></div>
