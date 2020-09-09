@@ -47,7 +47,7 @@ class ImageContainer extends React.Component {
       });
     return (
       <div>
-        <Card bg="secondary" className="ImageContainer-text">
+        <Card className="ImageContainer-text">
           <Card.Img variant="top" src={this.props.image} />
           <Card.Title>{this.props.text}</Card.Title>
           <Card.Body>
@@ -64,7 +64,6 @@ class ImageContainer extends React.Component {
           className="IC-Modal-Dialogue"
         >
           <Modal.Header closeButton>
-            <Modal.Title>{this.props.text}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="IC-Modal">{this.props.more}</Modal.Body>
         </Modal>
