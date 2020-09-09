@@ -72,3 +72,11 @@
   padding-top: 15px;
   width: 75%;
 }
+
+.WhiteLinks{
+  color: #fafafa;
+}
+
+.WhiteLinks:hover {
+  color: #fafafa;
+}
