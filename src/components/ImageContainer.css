@@ -13,7 +13,8 @@
 
 .ImageContainer-text-title {
   font-family: 'aharonibold', Arial, Helvetica, sans-serif;
-  font-size: 32;
+  margin-top: 3vh;
+  font-size: calc(10px + 2vmin);
   text-align: center;
 }
 
