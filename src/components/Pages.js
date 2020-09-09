@@ -38,6 +38,7 @@ import m5 from "../res/images/f24.png";
 import rari from "../res/images/f25.png";
 import range2 from "../res/images/f29.png";
 import washer from "../res/images/f21.png";
+import sabih from "../res/images/f12.png";
 import ImageContainer from "./ImageContainer";
 import CarouselContainer from "./CarouselContainer";
 import "./Pages.css";
@@ -99,6 +100,7 @@ function About() {
             בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש.
             תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
           </p>
+          <img src={sabih} className="About-Promo-Image" alt="תסביח" />
           <h1>תסביח - אוכלים בפיתה</h1>
           <p>
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד
