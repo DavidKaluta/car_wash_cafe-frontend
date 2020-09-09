@@ -29,16 +29,17 @@ import free_lunch from "../res/images/f10.jpeg";
 import benz_wash from "../res/images/f19.jpeg";
 import acc_store from "../res/images/f20.jpeg";
 import tt from "../res/images/f1.jpeg";
-import range1 from "../res/images/f2.jpeg";
-import benz1 from "../res/images/f3.jpeg";
+import range1 from "../res/images/f2.png";
+import benz1 from "../res/images/f3.png";
 import x5 from "../res/images/f4.jpeg";
 import benz2 from "../res/images/f7.jpeg";
-import i8 from "../res/images/f8.jpeg";
-import m5 from "../res/images/f24.jpeg";
-import rari from "../res/images/f25.jpeg";
-import range2 from "../res/images/f29.jpeg";
+import i8 from "../res/images/f8.png";
+import m5 from "../res/images/f24.png";
+import rari from "../res/images/f25.png";
+import range2 from "../res/images/f29.png";
+import washer from "../res/images/f21.png";
 import ImageContainer from "./ImageContainer";
-import CarouselContainer from './CarouselContainer'
+import CarouselContainer from "./CarouselContainer";
 import "./Pages.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -87,6 +88,7 @@ function About() {
     <div>
       <main>
         <div class="About-Wrapper">
+          <img src={washer} className="About-Promo-Image" alt="שוטף" />
           <h1>גם שטיפה, גם קפה</h1>
           <p>
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד
@@ -116,9 +118,20 @@ function About() {
 function Gallery() {
   return (
     <div>
-      <main>
+      <main className="Gallery-Wrapper">
         <h1>מי ביקר אצלנו?</h1>
-        <CarouselContainer image1={tt} image2={range1} image3={benz1} image4={x5} image5={benz2} image6={i8} image7={m5} image8={rari} image9={range2}/>
+        <CarouselContainer
+          image1={tt}
+          image2={range1}
+          image3={benz1}
+          image4={x5}
+          image5={benz2}
+          image6={i8}
+          image7={m5}
+          image8={rari}
+          image9={range2}
+          className="Gallery-CC"
+        />
       </main>
     </div>
   );

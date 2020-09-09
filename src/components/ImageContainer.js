@@ -49,7 +49,7 @@ class ImageContainer extends React.Component {
       <div>
         <Card className="ImageContainer-text">
           <Card.Img variant="top" src={this.props.image} />
-          <Card.Title>{this.props.text}</Card.Title>
+          <Card.Title className="ImageContainer-text-title">{this.props.text}</Card.Title>
           <Card.Body>
             <Card.Text>{this.props.desc}</Card.Text>
             <Button variant="primary" onClick={handleShow}>
