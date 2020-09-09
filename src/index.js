@@ -23,22 +23,22 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../LICENSE)
 */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import Footer from './components/Footer.js'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import Footer from "./components/Footer.js";
 
 ReactDOM.render(
   <React.StrictMode>
     <div class="wrapper">
-    <App />
-    <Footer />
+      <App />
+      <Footer />
     </div>
   </React.StrictMode>,
-  
-  document.getElementById('root')
+
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

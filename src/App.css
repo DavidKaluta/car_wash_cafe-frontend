@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #FAFF19;
+  background-color: #faff19;
   min-height: 5vh;
   max-height: 10vh;
   display: flex;
@@ -29,14 +29,15 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #FAFAFA;
+  color: #fafafa;
   direction: rtl;
-  font-family: 'aharonibold', Arial, Helvetica, sans-serif;
+  font-family: "aharonibold", Arial, Helvetica, sans-serif;
 }
 
 .App-FB-Icon {
   width: 3vh;
-  filter: invert(98%) sepia(100%) saturate(6%) hue-rotate(211deg) brightness(100%) contrast(103%);
+  filter: invert(98%) sepia(100%) saturate(6%) hue-rotate(211deg)
+    brightness(100%) contrast(103%);
 }
 
 .App-link {
@@ -50,7 +51,6 @@
   margin: 0vh;
 }
 
-
 .Header-menu-options {
   display: flex;
   flex-direction: row;
@@ -58,14 +58,12 @@
 
 .Header-menu-options > div {
   text-align: center;
-  margin:3vh;
+  margin: 3vh;
 }
 
 .Header-menu-options-alt {
   text-align: left;
 }
-
-
 
 .App-logo-wash {
   height: 75%;
@@ -73,7 +71,7 @@
   width: 75%;
 }
 
-.WhiteLinks{
+.WhiteLinks {
   color: #fafafa;
 }
 

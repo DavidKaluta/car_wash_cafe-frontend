@@ -28,7 +28,7 @@ import logo from "./res/carwashcafe_vector.svg";
 import fb from "./res/facebook-brands.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { About, Gallery, Map, Home } from './components/Pages'
+import { About, Gallery, Map, Home } from "./components/Pages";
 
 function App() {
   return (
@@ -46,13 +46,19 @@ function App() {
         <header className="App-header-lower">
           <div className="Header-menu-options">
             <div>
-              <Link to="/about" className="WhiteLinks">אודות</Link>
+              <Link to="/about" className="WhiteLinks">
+                אודות
+              </Link>
             </div>
             <div>
-              <Link to="/gallery" className="WhiteLinks">גלריה</Link>
+              <Link to="/gallery" className="WhiteLinks">
+                גלריה
+              </Link>
             </div>
             <div>
-              <Link to="/map" className="WhiteLinks">איפה אנחנו?</Link>
+              <Link to="/map" className="WhiteLinks">
+                איפה אנחנו?
+              </Link>
             </div>
             <div>
               <a href="https://www.facebook.com/pages/category/Car-Wash/Car-Wash-Cafe-רחיצת-מכוניות-1653280981570680/">
@@ -62,10 +68,18 @@ function App() {
           </div>
         </header>
         <Switch>
-          <Route path="/about"><About/></Route>
-          <Route path="/gallery"><Gallery/></Route>
-          <Route path="/map"><Map/></Route>
-          <Route path="/"><Home/></Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+          <Route path="/map">
+            <Map />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>

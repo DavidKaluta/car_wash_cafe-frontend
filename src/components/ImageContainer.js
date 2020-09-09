@@ -49,7 +49,9 @@ class ImageContainer extends React.Component {
       <div>
         <Card className="ImageContainer-text">
           <Card.Img variant="top" src={this.props.image} />
-          <Card.Title className="ImageContainer-text-title">{this.props.text}</Card.Title>
+          <Card.Title className="ImageContainer-text-title">
+            {this.props.text}
+          </Card.Title>
           <Card.Body>
             <Card.Text>{this.props.desc}</Card.Text>
             <Button variant="primary" onClick={handleShow}>
@@ -63,8 +65,7 @@ class ImageContainer extends React.Component {
           centered
           className="IC-Modal-Dialogue"
         >
-          <Modal.Header closeButton>
-          </Modal.Header>
+          <Modal.Header closeButton></Modal.Header>
           <Modal.Body className="IC-Modal">{this.props.more}</Modal.Body>
         </Modal>
       </div>

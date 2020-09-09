@@ -1,3 +1,13 @@
+# CarWashCafe.co.il's frontend
+
+This is a simple React-based ad website, for a simple BILU Intersection car wash.
+
+3 King Hasan II, Qiryat Eqron
+
+Made with ❤️ in Rishon LeZion
+
+# Auto-generated React Mumbo Jumbo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

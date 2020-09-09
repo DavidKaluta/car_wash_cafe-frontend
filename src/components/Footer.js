@@ -23,20 +23,20 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../../LICENSE)
 */
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
-function Footer () {
+function Footer() {
   return (
     <div className="Footer">
       <footer>
         <div className="Footer-flexbox">
-            <div>שד׳ המלך חסן השני 3, קריית עקרון</div>
-            <div>08-9450036</div>
+          <div>שד׳ המלך חסן השני 3, קריית עקרון</div>
+          <div>08-9450036</div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 export default Footer;
