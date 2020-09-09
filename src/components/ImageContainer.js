@@ -23,45 +23,53 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../../LICENSE)
 */
-import React from 'react'
-import Modal from 'react-bootstrap/Modal'
-import './ImageContainer.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import React from "react";
+import Modal from "react-bootstrap/Modal";
+import "./ImageContainer.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Card, Button } from "react-bootstrap";
 
 class ImageContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
     };
   }
   render() {
-    const handleClose = () => this.setState({
-      show: false
-    });
-    const handleShow = () => this.setState({
-      show: true
-    });
-    return(
-      <div className="ImageContainer">
-        <div className="ImageContainer-table" onClick={handleShow}>
-            <div>
-              <img src={this.props.image} className="ImageContainer-image" alt=""></img>
-            </div>
-            <div>
-              <p className="ImageContainer-text">{this.props.text}</p>
-            </div>
-        </div>
-        <Modal show={this.state.show} onHide={handleClose} centered className="IC-Modal-Dialogue">
+    const handleClose = () =>
+      this.setState({
+        show: false,
+      });
+    const handleShow = () =>
+      this.setState({
+        show: true,
+      });
+    return (
+      <div>
+        <Card bg="secondary" className="ImageContainer-text">
+          <Card.Img variant="top" src={this.props.image} />
+          <Card.Title>{this.props.text}</Card.Title>
+          <Card.Body>
+            <Card.Text>{this.props.desc}</Card.Text>
+            <Button variant="primary" onClick={handleShow}>
+              עוד מידע
+            </Button>
+          </Card.Body>
+        </Card>
+        <Modal
+          show={this.state.show}
+          onHide={handleClose}
+          centered
+          className="IC-Modal-Dialogue"
+        >
           <Modal.Header closeButton>
             <Modal.Title>{this.props.text}</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="IC-Modal">הנה בדיקה</Modal.Body>
+          <Modal.Body className="IC-Modal">{this.props.more}</Modal.Body>
         </Modal>
       </div>
-    )
+    );
   }
 }
 
