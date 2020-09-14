@@ -47,7 +47,15 @@ class ImageContainer extends React.Component {
       });
     return (
       <div>
-        <Card className="ImageContainer-text">
+        <Card
+          className="ImageContainer-text"
+          bg={
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light"
+          }
+        >
           <Card.Img variant="top" src={this.props.image} />
           <Card.Title className="ImageContainer-text-title">
             {this.props.text}

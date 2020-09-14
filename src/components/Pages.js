@@ -41,6 +41,7 @@ import washer from "../res/images/f21.png";
 import sabih from "../res/images/f12.png";
 import ImageContainer from "./ImageContainer";
 import CarouselContainer from "./CarouselContainer";
+import { Image } from "react-bootstrap";
 import "./Pages.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -89,7 +90,12 @@ function About() {
     <div>
       <main>
         <div class="About-Wrapper">
-          <img src={washer} className="About-Promo-Image" alt="שוטף" />
+          <Image
+            src={washer}
+            className="About-Promo-Image"
+            alt="שוטף"
+            rounded
+          />
           <h1>גם שטיפה, גם קפה</h1>
           <p>
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד
@@ -100,7 +106,12 @@ function About() {
             בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש.
             תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
           </p>
-          <img src={sabih} className="About-Promo-Image" alt="תסביח" />
+          <Image
+            src={sabih}
+            className="About-Promo-Image"
+            alt="תסביח"
+            rounded
+          />
           <h1>תסביח - אוכלים בפיתה</h1>
           <p>
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד

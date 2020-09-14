@@ -77,3 +77,10 @@
     padding: 5px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #010101;
+    color: #fefefe;
+  }
+}
