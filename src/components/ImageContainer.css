@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
 .ImageContainer-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Heebo, sans-serif;
   text-align: center;
 }
 
@@ -12,14 +14,14 @@
 }
 
 .ImageContainer-text-title {
-  font-family: "aharonibold", Arial, Helvetica, sans-serif;
+  font-family: "aharonibold", sans-serif;
   margin-top: 3vh;
-  font-size: calc(10px + 2vmin);
+  font-size: 24pt;
   text-align: center;
 }
 
 .IC-Modal-Dialogue {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Heebo, sans-serif;
 }
 
 .IC-Modal {
