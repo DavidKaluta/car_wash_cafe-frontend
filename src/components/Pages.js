@@ -155,7 +155,15 @@ function Map() {
     <div>
       <main>
         <div className="Map-Box">
-          <MapIframe />
+          <div className="Map-GoogleMap">
+            <iframe
+              title="מפה"
+              width={window.innerWidth <= 768 ? 250 : 650}
+              height={window.innerWidth <= 768 ? 250 : 400}
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCaruUrzWxSOHwjIccNck9gytcBmdGRp_c&q=31.859687,34.813312"
+            />
+          </div>
           <div className="Map-Addr">
             <h2>כתובת</h2>
             <p>שד׳ המלך חסן השני 3, קריית עקרון</p>
@@ -165,33 +173,6 @@ function Map() {
           </div>
         </div>
       </main>
-    </div>
-  );
-}
-
-function MapIframe() {
-  if (window.innerWidth <= 768) {
-    return (
-      <div className="Map-GoogleMap">
-        <iframe
-          title="מפה"
-          width="250"
-          height="250"
-          frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCaruUrzWxSOHwjIccNck9gytcBmdGRp_c&q=31.859687,34.813312"
-        />
-      </div>
-    );
-  }
-  return (
-    <div className="Map-GoogleMap">
-      <iframe
-        title="מפה"
-        width="650"
-        height="400"
-        frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCaruUrzWxSOHwjIccNck9gytcBmdGRp_c&q=31.859687,34.813312"
-      />
     </div>
   );
 }
