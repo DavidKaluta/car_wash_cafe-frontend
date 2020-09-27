@@ -1,0 +1,7 @@
+{
+  "editor.default_syntax" : "jsx",
+  "workspace.color" : 2,
+  "workspace.name" : "Car Wash Café",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "localhost:3000"
+}
