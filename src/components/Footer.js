@@ -34,6 +34,9 @@ function Footer() {
           <div>שד׳ המלך חסן השני 3, קריית עקרון</div>
           <div>08-9450036</div>
         </div>
+        <div className="credit">
+          <div>A BD_Site Production, MMXX</div>
+        </div>
       </footer>
     </div>
   );

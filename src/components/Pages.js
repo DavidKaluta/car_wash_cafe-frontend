@@ -23,7 +23,16 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../../LICENSE)
 */
+
+/* node modules and stuff */
 import React from "react";
+import { Image } from "react-bootstrap";
+
+/* local components */
+import ImageContainer from "./ImageContainer";
+import CarouselContainer from "./CarouselContainer";
+
+/* pics */
 import enterance_lambo from "../res/images/f9_new.png";
 import free_lunch from "../res/images/f10.jpeg";
 import benz_wash from "../res/images/f19.jpeg";
@@ -39,9 +48,8 @@ import rari from "../res/images/f25.png";
 import range2 from "../res/images/f29.png";
 import washer from "../res/images/f21.png";
 import sabih from "../res/images/f12.png";
-import ImageContainer from "./ImageContainer";
-import CarouselContainer from "./CarouselContainer";
-import { Image } from "react-bootstrap";
+
+/* stylesheets */
 import "./Pages.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 

@@ -7,6 +7,12 @@
   color: #fafafa;
 }
 
+.credit {
+  background-color: #010101;
+  width: 100%;
+  color: #fefefe;
+}
+
 .Footer-flexbox {
   width: 100%;
   font-size: calc(10px + 1vmin);

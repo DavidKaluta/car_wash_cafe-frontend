@@ -23,6 +23,8 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../../LICENSE)
 */
+
+/* node modules */
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "./ImageContainer.css";
