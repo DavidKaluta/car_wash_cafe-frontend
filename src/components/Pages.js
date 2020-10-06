@@ -98,6 +98,7 @@ function About() {
     <div>
       <main>
         <div class="About-Wrapper">
+          <br />
           <Image
             src={washer}
             className="About-Promo-Image"

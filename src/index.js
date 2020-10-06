@@ -23,12 +23,20 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../LICENSE)
 */
+
+/* stuff from modules */
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
+/* components */
 import App from "./App";
+import Footer from "./components/Footer";
+
+/* other */
 import * as serviceWorker from "./serviceWorker";
-import Footer from "./components/Footer.js";
+
+/* assets */
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>

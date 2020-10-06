@@ -23,49 +23,73 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../LICENSE)
 */
-import React from "react";
-import logo from "./res/carwashcafe_vector.svg";
-import fb from "./res/facebook-brands.svg";
-import "./App.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+/* stuff from modules */
+import React, { useState } from "react";
+import { Nav, Navbar, Collapse } from "react-bootstrap";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  NavLink,
+} from "react-router-dom";
+
+/* stuff from components */
 import { About, Gallery, Map, Home } from "./components/Pages";
 
+/* assets */
+import logo from "./res/carwashcafe_vector.svg";
+import "./App.css";
+
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <Router>
-        <header className="App-header">
-          <div className="Header-menu">
-            <div>
-              <Link to="/">
+        <header>
+          <Navbar className="bs-navbar-cwc">
+            <Link to="/">
+              <Navbar.Brand>
                 <img src={logo} className="App-logo-wash" alt="סמל" />
-              </Link>
-            </div>
-          </div>
-        </header>
-        <header className="App-header-lower">
-          <div className="Header-menu-options">
+              </Navbar.Brand>
+            </Link>
+            <Nav className="ml-auto">
+              <div id="desktop-only">
+                <Nav.Link as={NavLink} to="/about">
+                  אודות
+                </Nav.Link>
+                <Nav.Link as={NavLink} to="/gallery">
+                  גלרייה
+                </Nav.Link>
+                <Nav.Link as={NavLink} to="/map">
+                  מפה
+                </Nav.Link>
+                <Nav.Link href="https://www.facebook.com/pages/category/Car-Wash/Car-Wash-Cafe-רחיצת-מכוניות-1653280981570680/">
+                  פייסבוק
+                </Nav.Link>
+              </div>
+            </Nav>
+            <span
+              onClick={() => setOpen(!open)}
+              aria-controls="hamburger-menu"
+              aria-expanded={open}
+              class="ml-only"
+              id="mobile-only"
+            >
+              <i className="fas fa-bars"></i>
+            </span>
+          </Navbar>
+          <Collapse in={open} className="burger-wrapper" id="mobile-only">
             <div>
-              <Link to="/about" className="WhiteLinks">
-                אודות
-              </Link>
-            </div>
-            <div>
-              <Link to="/gallery" className="WhiteLinks">
-                גלריה
-              </Link>
-            </div>
-            <div>
-              <Link to="/map" className="WhiteLinks">
-                איפה אנחנו?
-              </Link>
-            </div>
-            <div>
+              <Link to="/about">אודות</Link>
+              <Link to="/gallery">גלרייה</Link>
+              <Link to="/map">מפה</Link>
               <a href="https://www.facebook.com/pages/category/Car-Wash/Car-Wash-Cafe-רחיצת-מכוניות-1653280981570680/">
-                <img src={fb} className="App-FB-Icon" alt="Facebook"></img>
+                פייסבוק
               </a>
             </div>
-          </div>
+          </Collapse>
         </header>
         <Switch>
           <Route path="/about">

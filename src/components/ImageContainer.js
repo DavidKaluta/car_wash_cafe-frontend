@@ -26,10 +26,11 @@ ________  ________  ___      ___ ___  ________
 
 /* node modules */
 import React from "react";
-import Modal from "react-bootstrap/Modal";
+import { Card, Button, Modal } from "react-bootstrap";
+
+/* assets */
 import "./ImageContainer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Button } from "react-bootstrap";
 
 class ImageContainer extends React.Component {
   constructor(props) {

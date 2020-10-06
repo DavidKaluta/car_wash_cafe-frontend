@@ -23,8 +23,12 @@ ________  ________  ___      ___ ___  ________
    
   This code is licensed under the 2-clause BSD License (../../LICENSE)
 */
+
+/* stuff from modules */
 import React from "react";
 import { Carousel } from "react-bootstrap";
+
+/* assets */
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class CarouselContainer extends React.Component {

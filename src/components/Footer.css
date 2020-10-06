@@ -8,9 +8,9 @@
 }
 
 .credit {
-  background-color: #010101;
+  background-color: #ffffff;
   width: 100%;
-  color: #fefefe;
+  color: #000000;
 }
 
 .Footer-flexbox {
@@ -22,4 +22,11 @@
   direction: rtl;
   display: flex;
   flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+  .credit {
+    background-color: #010101;
+    color: #fefefe;
+  }
 }
