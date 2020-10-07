@@ -6,33 +6,6 @@
   width: 25%;
 }
 
-.App-header {
-  background-color: #faff19;
-  min-height: 5vh;
-  max-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #210281;
-  direction: rtl;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.App-header-lower {
-  background-color: #424242;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #fafafa;
-  direction: rtl;
-  font-family: "aharonibold", Arial, Helvetica, sans-serif;
-}
-
 .App-FB-Icon {
   width: 3vh;
   filter: invert(98%) sepia(100%) saturate(6%) hue-rotate(211deg)
